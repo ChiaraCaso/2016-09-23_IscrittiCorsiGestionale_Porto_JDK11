@@ -26,6 +26,13 @@ public class FXMLController {
     @FXML
     void doCorsiFrequentati(ActionEvent event) {
 
+    	txtResult.clear();
+    	
+    	this.model.creaGrafo();
+    	txtResult.appendText("GRAFO CREATO!\n");
+    	txtResult.appendText("#VERTICI: "+this.model.nVertici()+"\n");
+    	txtResult.appendText("#ARCHI: "+this.model.nArchi()+"\n");
+
     }
 
     @FXML
